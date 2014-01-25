@@ -1,5 +1,5 @@
 //
-// FrogJmp.c
+// FrogJmp.m
 // Codility - FrogJmp
 //
 
