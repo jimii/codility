@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PermMissingElem.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+
+        NSMutableArray *array = [NSMutableArray arrayWithObjects:@2, @3, @1, @5, nil];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Should return 4");
+        NSLog(@"Returns %d", solution(array));
         
     }
     return 0;
