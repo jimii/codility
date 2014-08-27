@@ -1,5 +1,14 @@
-require_relative "PermCheck"
+require_relative 'PermCheck'
+require 'minitest/autorun'
 
-test = PermCheck.new
-puts "Should return 1"
-puts "Returns: #{test.solution([4, 1, 3, 2])}"
+class Test < MiniTest::Test
+
+	def setup
+		@perm_check = PermCheck.new
+	end
+
+	def test_solution
+		assert_equal 1, @perm_check.solution([4,1,3,2])
+	end
+
+end

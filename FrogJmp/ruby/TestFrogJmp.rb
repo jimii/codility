@@ -1,5 +1,14 @@
-require_relative "FrogJmp"
+require_relative 'FrogJmp'
+require 'minitest/autorun'
 
-test = FrogJmp.new
-puts "Should return 3"
-puts "Returns: #{test.solution(10,85,30)}"
+class Test < MiniTest::Test
+
+	def setup
+		@frog_jmp = FrogJmp.new
+	end
+
+	def test_solution
+		assert_equal 3, @frog_jmp.solution(10,85,30)
+	end
+
+end

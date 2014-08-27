@@ -1,5 +1,14 @@
-require_relative "PermMissingElem"
+require_relative 'PermMissingElem'
+require 'minitest/autorun'
 
-test = PermMissingElem.new
-puts "Should return 4"
-puts "Returns: #{test.solution([2, 3, 1, 5])}"
+class Test < MiniTest::Test
+
+	def setup
+		@perm_missing_elem = PermMissingElem.new
+	end
+
+	def test_solution
+		assert_equal 4, @perm_missing_elem.solution([2,3,1,5])
+	end
+
+end
