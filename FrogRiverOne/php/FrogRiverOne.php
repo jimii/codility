@@ -1,4 +1,7 @@
 <?php
+
+namespace Codility;
+
 class FrogRiverOne {
 
     function solution($X, $A) {

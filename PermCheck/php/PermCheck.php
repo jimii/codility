@@ -1,4 +1,7 @@
 <?php
+
+namespace Codility;
+
 class PermCheck {
     function solution($A) {
 

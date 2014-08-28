@@ -1,4 +1,7 @@
 <?php
+
+namespace Codility;
+
 class PermMissingElem {
     function solution($A) {
         

@@ -1,4 +1,7 @@
 <?php
+
+namespace Codility;
+
 class TapeEquilibrium {
 	function solution($A) {
 

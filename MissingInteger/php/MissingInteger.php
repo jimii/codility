@@ -1,5 +1,7 @@
 <?php
 
+namespace Codility;
+
 class MissingInteger {
 
     function solution($A) {

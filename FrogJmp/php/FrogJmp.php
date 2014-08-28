@@ -1,5 +1,9 @@
 <?php
+
+namespace Codility;
+
 class FrogJmp {
+
 	function solution($X, $Y, $D) {
 
 		$result = 0;
@@ -16,4 +20,5 @@ class FrogJmp {
 		return $result;
 
 	}
+	
 }

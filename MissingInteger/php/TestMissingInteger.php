@@ -1,6 +1,15 @@
 <?php
-require("MissingInteger.php");
+require 'MissingInteger.php';
 
-$test = new MissingInteger();
-echo "Should return 5\n";
-echo "Returns: ".$test->solution([1, 3, 6, 4, 1, 2])."\n";
+class Test extends PHPUnit_Framework_TestCase {
+
+	protected $missing_integer;
+
+	protected function setup() {
+		$this->missing_integer = new \Codility\MissingInteger;
+	}
+
+	public function testSolution() {
+		$this->assertEquals(5, $this->missing_integer->solution([1,3,6,4,1,2]));
+	}
+}

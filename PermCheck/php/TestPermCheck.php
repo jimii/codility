@@ -1,6 +1,16 @@
 <?php
-require("PermCheck.php");
+require 'PermCheck.php';
 
-$test = new PermCheck();
-echo "Should return 1\n";
-echo "Returns: ".$test->solution([4, 1, 3, 2])."\n";
+class Test extends PHPUnit_Framework_TestCase {
+
+	protected $perm_check;
+
+	protected function setup() {
+		$this->perm_check = new \Codility\PermCheck;
+	}
+
+	public function testSolution() {
+		$this->assertEquals(1, $this->perm_check->solution([4,1,3,2]));
+	}
+}
+

@@ -1,6 +1,17 @@
 <?php
-require("FrogJmp.php");
 
-$test = new FrogJmp();
-echo "Should return 3\n";
-echo "Returns: ".$test->solution(10,85,30)."\n";
+require_once 'FrogJmp.php';
+
+class Test extends PHPUnit_Framework_TestCase {
+
+	protected $frog_jmp;
+
+	protected function setup() {
+		$this->frog_jmp = new \Codility\FrogJmp;
+	}
+
+	public function testSolution() {
+		$this->assertEquals(3, $this->frog_jmp->solution(10,85,30));
+	}
+
+}
