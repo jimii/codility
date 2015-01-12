@@ -1,6 +1,6 @@
 class MinAvgTwoSlice
 
-	def solution(a)
+  def solution(a)
 
     i = 0;
     length = a.length
