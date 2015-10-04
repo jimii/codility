@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
         if (A%K == 0) {
         	result = ((B-A)/K)+1;
         } else {
-        	result = (B/K - ((A/K)+1))+1;
+            result = (B/K - A/K);
         }
 
         return (int)result;
